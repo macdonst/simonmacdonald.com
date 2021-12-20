@@ -26,7 +26,7 @@ module.exports = function PhotoCredit (props) {
   target="_blank"
   rel="noopener"
 >
-  Photo by <span class="color-2DA6FF">${photographer}</span> on <span class="color-2DA6FF">${service}</span>
+  Photo by <span class="color-2DA6FF">${photographer}</span>
 </a>
   `
 }
