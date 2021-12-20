@@ -1,2 +1,0 @@
-# simonmacdonald.com
-Begin app
