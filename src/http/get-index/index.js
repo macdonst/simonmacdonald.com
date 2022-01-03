@@ -11,7 +11,7 @@ exports.handler = async function Index () {
     title: 'simonmacdonald.com',
     occupation: 'Head of Developer Experience - Begin',
     location: 'Ottawa, ON',
-    bio: 'Coffee Lover and Human Goodreads.',
+    bio: 'Father, Software Engineer, Comic Enthusiast, Coffee Lover and Human Goodreads.',
 
     /**
      * Contact / social
