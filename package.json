@@ -6,7 +6,8 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
-    "@enhance/arc-plugin-enhance": "^4.3.1"
+    "@enhance/arc-plugin-enhance": "^4.3.1",
+    "@vanillawc/wc-social-link": "^1.5.0"
   },
   "devDependencies": {
     "@enhance/types": "^0.5.0",
