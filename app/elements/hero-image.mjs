@@ -17,7 +17,7 @@ export default function Element ({ html, state }) {
     <source media="(min-width: 800px)" srcset="${landscape}" />
     <img src="${portrait}" alt="${alt}" />
   </picture>
-  <div class="centered flex flex-col h-full w-full justify-center items-center absolute left0 top0 p0">
+  <div class="centered text-center flex flex-col h-full w-full justify-center items-center absolute left0 top0 p0">
     ${subtitle && `<p class="italic text0 text1-lg font-normal mt0 mb0">${subtitle}</p>`}
     ${title && `<p><strong class="uppercase font-sans font-bold tracking2-lg text2 text4-lg">${title}</strong></p>`}
   </div>
