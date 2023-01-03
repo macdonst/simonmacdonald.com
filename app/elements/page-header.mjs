@@ -70,7 +70,7 @@ export default function BeginNav({ html }) {
       }
     </style>
 
-    <header class="font-mono fixed top0 left0 right0">
+    <header class="font-sans font-medium fixed top0 left0 right0">
       <begin-container class="flex-lg items-center justify-between w-full">
         <div class="p0 uppercase text1">
           <a href="/">Simon MacDonald</a>
