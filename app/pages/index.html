@@ -1,7 +1,6 @@
 <page-header></page-header>
 <hero-image
-  portrait="/_public/heroes/bg.jpg"
-  landscape="/_public/heroes/bg-wide.jpg"
+  img="heroes/bg.jpg"
   alt="Simon speaking behind a lectern"
   title="Simon MacDonald"
   subtitle="Father, Software Engineer, Comic Enthusiast and Coffee Lover">
@@ -12,6 +11,24 @@
     <div class="mb0 p0 leading3 font-normal grid col-6-lg col-1">
       <p class="col-start-2 col-end-6">I’m the Head of Developer Experience at <page-link href="https://begin.com">Begin</page-link> where I contribute to open source projects like <page-link href="https://arc.codes">Architect</page-link> and <page-link href="https://enhance.dev/">Enhance</page-link>. I’ve been lucky enough to speak at a number of conferences and meetups whose slides and videos are archived <page-link href="/past-talks-1">here</page-link>. As well, I’m one of the co-organizers of the ever popular <page-link href="http://ottawajs.org/">Ottawa JS Meetup</page-link> which we hope to restart in 2023.</p>
     </div>
+  </section>
+  <section class="grid col-1 col-2-lg gap-1-lg">
+    <site-card>
+      <card-image slot="image"><img src="/_public/projects.png" /></card-image>
+      <card-title slot="title">
+        <page-link href="/projects">Projects</page-link>
+      </card-title>
+      <card-desc slot="desc">Find out about the open source projects that I'm currently contributing to.</card-desc>
+      <page-link slot="link" href="/projects">Learn More →</page-link>
+    </site-card>
+    <site-card>
+      <card-image slot="image"><img src="/_public/speaking.jpg" /></card-image>
+      <card-title slot="title">
+        <page-link href="/past-talks-1">Speaking</page-link>
+      </card-title>
+      <card-desc slot="desc">Check out some of the talks I've given on a myriad of topics.</card-desc>
+      <page-link slot="link" class="mt0" href="/past-talks-1">Visit Past Talks →</page-link>
+    </site-card>
   </section>
 </page-main>
 <page-footer></page-footer>

@@ -1,6 +1,6 @@
 export default function Element ({ html, state }) {
   const { attrs } = state
-  const { portrait, landscape, title, subtitle, alt = ''} = attrs
+  const { img, title, subtitle, alt = ''} = attrs
   return html`
   <style>
     .wrapper {
@@ -12,11 +12,14 @@ export default function Element ({ html, state }) {
     }
   </style>
 <div class="wrapper relative overflow-hidden w-full">
-  <picture class="absolute top0 right0 bottom0 left0">
-    <source media="(max-width: 799px)" srcset="${portrait}" />
-    <source media="(min-width: 800px)" srcset="${landscape}" />
-    <img src="${portrait}" alt="${alt}" />
-  </picture>
+  <enhance-image class="absolute top0 right0 bottom0 left0"
+    src="${img}"
+    alt="${alt}"
+    defaultwidth='640'
+    variant1='(min-width: 90em) 2500'
+    variant2='(min-width: 40em) 1440'
+    loading='lazy'
+  ></enhance-image>
   <div class="centered text-center flex flex-col h-full w-full justify-center items-center absolute left0 top0 p0">
     ${subtitle && `<p class="italic text0 text1-lg font-normal mt0 mb0">${subtitle}</p>`}
     ${title && `<p><strong class="uppercase font-sans font-bold tracking2-lg text2 text4-lg">${title}</strong></p>`}
