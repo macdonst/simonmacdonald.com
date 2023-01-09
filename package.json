@@ -6,9 +6,9 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
+    "@enhance/arc-image-plugin": "^0.0.2",
     "@enhance/arc-plugin-enhance": "^4.3.1",
     "@enhance/image": "^0.0.0-alpha.2",
-    "@ryanbethel/arc-image-plugin": "github:beginner-corp/begin-image-plugin#new-begin-refactor",
     "@vanillawc/wc-social-link": "^1.5.0"
   },
   "devDependencies": {
