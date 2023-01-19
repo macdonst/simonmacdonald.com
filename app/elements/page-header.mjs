@@ -13,6 +13,10 @@ export default function BeginNav({ html }) {
       }
     </style>
     <style>
+      :host.noimage header {
+        background-color: black;
+      }
+
       header {
         z-index: 4;
       }
