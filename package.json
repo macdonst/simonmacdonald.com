@@ -6,14 +6,23 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
-    "@enhance/arc-image-plugin": "^0.0.2",
+    "@begin/validator": "^0.0.10",
+    "@enhance/arc-image-plugin": "^0.0.3",
     "@enhance/arc-plugin-enhance": "^4.3.1",
+    "@enhance/form-elements": "github:enhance-dev/form-elements",
     "@enhance/image": "^0.0.0-alpha.2",
     "@vanillawc/wc-social-link": "^1.5.0"
   },
   "devDependencies": {
+    "@aws-sdk/client-apigatewaymanagementapi": "^3.252.0",
+    "@aws-sdk/client-dynamodb": "^3.252.0",
+    "@aws-sdk/client-s3": "^3.252.0",
+    "@aws-sdk/client-sns": "^3.252.0",
+    "@aws-sdk/client-sqs": "^3.252.0",
+    "@aws-sdk/client-ssm": "^3.252.0",
+    "@aws-sdk/lib-dynamodb": "^3.252.0",
     "@enhance/types": "^0.5.0",
-    "aws-sdk": "^2.1287.0",
+    "aws-sdk": "^2.1297.0",
     "eslint": "^8.30.0"
   },
   "eslintConfig": {

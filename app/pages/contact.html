@@ -1,4 +1,20 @@
-<section class="m-auto p2 font-sans">
-  <h1 class="mb1 font-semibold text3">New Page</h1>
-  <p>Your content here</p>
-</section>
+<page-header></page-header>
+<hero-image
+  img="heroes/ants.jpg"
+  alt="Attending a lecture"
+  title="Contact">
+</hero-image>
+<page-main>
+  <enhance-form
+  action="/contact"
+  method="POST">
+  <div class="grid col-1 col-2-lg gap-1-lg">
+    <enhance-text-input label="First Name" type="text" id="first_name" name="first_name" value=""></enhance-text-input>
+    <enhance-text-input label="Last Name" type="text" id="last_name" name="last_name" value=""></enhance-text-input>
+  </div>
+  <enhance-text-input label="Email" type="email" id="email" name="email" value=""></enhance-text-input>
+  <enhance-text-input label="Subject" type="text" id="subject" name="subject" value=""></enhance-text-input>
+  <enhance-text-input label="Message" type="text" id="message" name="message" value=""></enhance-text-input>
+  <enhance-submit-button><span slot="label">Submit</span></enhance-submit-button>
+</page-main>
+<page-footer></page-footer>

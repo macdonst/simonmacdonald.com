@@ -1,5 +1,5 @@
 @app
-begin-app
+simonmacdonald-com
 
 @static
 prune true
