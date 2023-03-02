@@ -2,8 +2,8 @@
 /**
   * @typedef {import('@enhance/types').EnhanceApiFn} EnhanceApiFn
   */
-import { getContacts, upsertContact, validate } from '../models/contacts.mjs'
-
+import { getContacts, validate } from '../models/contacts.mjs'
+import arc from '@architect/functions'
 
 /**
  * @type {EnhanceApiFn}
@@ -38,21 +38,14 @@ export async function post (req) {
     }
   }
 
-  // eslint-disable-next-line no-unused-vars
-  let { problems: removedProblems, contact: removed, ...newSession } = session
-  try {
-    const result = await upsertContact(contact)
-    return {
-      session: newSession,
-      json: { contact: result },
-      location: '/contacts'
-    }
-  }
-  catch (err) {
-    return {
-      session: { ...newSession, error: err.message },
-      json: { error: err.message },
-      location: '/contact'
-    }
+  console.log(contact)
+
+  await arc.events.publish({
+    name: 'send-email',
+    payload: contact,
+  })
+
+  return {
+    location: '/contact'
   }
 }
