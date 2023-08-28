@@ -18,3 +18,8 @@ region us-west-2
 @events
 send-email
   src jobs/events/send-email
+
+@tables
+talks
+  id *String
+  date **String
