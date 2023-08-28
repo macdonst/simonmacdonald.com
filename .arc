@@ -9,6 +9,9 @@ architect/plugin-lambda-invoker
 enhance/arc-plugin-enhance
 enhance/arc-image-plugin
 
+@enhance-styles
+config styleguide.json
+
 @bundles
 wc-social-link './node_modules/@vanillawc/wc-social-link/src/wc-social-link.js'
 

@@ -2,22 +2,22 @@
   "name": "begin-app",
   "version": "0.0.1",
   "scripts": {
-    "start": "begin dev",
+    "start": "npx enhance dev",
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
-    "@architect/functions": "^5.3.4",
-    "@begin/validator": "^0.0.10",
-    "@enhance/arc-image-plugin": "^0.0.4",
-    "@enhance/arc-plugin-enhance": "^4.3.1",
+    "@architect/functions": "^7.0.0",
+    "@begin/validator": "^1.0.1",
+    "@enhance/arc-image-plugin": "^1.1.0",
+    "@enhance/arc-plugin-enhance": "^6.2.1",
     "@enhance/form-elements": "github:enhance-dev/form-elements",
-    "@enhance/image": "^0.0.0-alpha.2",
+    "@enhance/image": "^0.0.0-alpha.13",
     "@vanillawc/wc-social-link": "^1.5.0",
     "google-auth-library": "^8.7.0",
-    "nodemailer": "^6.9.1"
+    "nodemailer": "^6.9.4"
   },
   "devDependencies": {
-    "@architect/plugin-lambda-invoker": "^1.0.0",
+    "@architect/plugin-lambda-invoker": "^1.1.0",
     "@aws-sdk/client-apigatewaymanagementapi": "^3.252.0",
     "@aws-sdk/client-dynamodb": "^3.252.0",
     "@aws-sdk/client-s3": "^3.252.0",
@@ -25,9 +25,10 @@
     "@aws-sdk/client-sqs": "^3.252.0",
     "@aws-sdk/client-ssm": "^3.252.0",
     "@aws-sdk/lib-dynamodb": "^3.252.0",
-    "@enhance/types": "^0.5.0",
+    "@enhance/cli": "^1.0.3",
+    "@enhance/types": "^0.6.1",
     "aws-sdk": "^2.1297.0",
-    "eslint": "^8.30.0"
+    "eslint": "^8.48.0"
   },
   "eslintConfig": {
     "env": {
