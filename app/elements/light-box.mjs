@@ -39,6 +39,7 @@ export default function LightBox({ html, state }) {
       <a href='${image}' data-instance='${instanceID}' class='block overflow-hidden'>
         <img src='${thumbnail}' alt='${alt}' class='object-cover object-c' />
       </a>
+      <h2 class="text-1 font-bold pbs-1">${alt}</h3>
       <dialog data-instance='${instanceID}' class='m-auto overflow-visible'>
         <form method='dialog' class='text-end relative z1'>
           <button class='close-button radius-100 font-semibold'>&times;</button>
