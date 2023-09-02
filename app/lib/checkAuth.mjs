@@ -1,4 +1,4 @@
-export function checkAuth(req) {
+export async function checkAuth(req) {
   const session = req.session
   const authorized = session?.authorized ? session?.authorized : false
 
