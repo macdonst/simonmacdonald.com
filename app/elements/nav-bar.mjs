@@ -26,7 +26,7 @@ export default function NavBar({ html, state }) {
     <site-container>
       <nav class='flex align-items-center gap0 leading1'>
         <a href='/' class='no-underline flex align-items-center gap0'>
-          <img src='https://github.com/${author.githubUsername}.png' alt='Avatar for Simon MacDonald' />
+          <img src='/_public/avatar.jpg' alt='Avatar for Simon MacDonald' />
           <h1 class='font-semibold tracking-1'>
             ${author.name}<br />
             <span class='font-normal'>${author.title}</span>

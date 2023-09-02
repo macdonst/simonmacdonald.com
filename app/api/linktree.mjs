@@ -5,8 +5,8 @@ export async function get() {
   return {
     json: {
       page: {
-        title: 'Themes',
-        description: 'Custom properties and calc'
+        title: 'Simon MacDonald',
+        description: 'Useful links'
       },
       links
     }
