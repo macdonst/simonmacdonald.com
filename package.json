@@ -12,7 +12,6 @@
     "@enhance/arc-plugin-enhance": "^6.2.1",
     "@enhance/form-elements": "github:enhance-dev/form-elements",
     "@enhance/image": "^0.0.0-alpha.13",
-    "@vanillawc/wc-social-link": "^1.5.0",
     "google-auth-library": "^8.7.0",
     "nodemailer": "^6.9.4"
   },
