@@ -58,6 +58,7 @@ export default function Head(state) {
 
         body {
           color: var(--dark);
+          background-color: var(--light);
           text-rendering: optimizeLegibility;
         }
 
