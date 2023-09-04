@@ -11,7 +11,7 @@
     "@begin/validator": "^1.0.1",
     "@enhance/arc-image-plugin": "^1.1.0",
     "@enhance/arc-plugin-enhance": "^6.2.1",
-    "@enhance/form-elements": "github:enhance-dev/form-elements",
+    "@enhance/form-elements": "github:enhance-dev/form-elements#main",
     "@enhance/image": "^0.0.0-alpha.13",
     "google-auth-library": "^8.7.0",
     "nodemailer": "^6.9.4"
