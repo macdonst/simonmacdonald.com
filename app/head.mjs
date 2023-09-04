@@ -33,6 +33,7 @@ export default function Head(state) {
       <link rel="icon" href="/_public/favicon.svg">
       <title>${store.author.name}: ${title}</title>
       <meta name="description" content="Portfolio for ${store.author.name}, ${store.author.title}" />
+      <link href="https://mastodon.online/@macdonst" rel="me">
       ${linkTag()}
 
       ${(req.path === '/resume') ? '<link rel="stylesheet" href="/_public/print-resume.css">' : ''}
