@@ -31,8 +31,8 @@ export default function Head(state) {
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="og:type" content="website" />
       <link rel="icon" href="/_public/favicon.svg">
-      <title>Axol Lotl: ${title}</title>
-      <meta name="description" content="Portfolio for Axol Lotl, Senior Developer" />
+      <title>${store.author.name}: ${title}</title>
+      <meta name="description" content="Portfolio for ${store.author.name}, ${store.author.title}" />
       ${linkTag()}
 
       ${(req.path === '/resume') ? '<link rel="stylesheet" href="/_public/print-resume.css">' : ''}
