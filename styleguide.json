@@ -48,7 +48,8 @@
       "linktree-link-border-color-hover": "#343a40",
       "linktree-link-bg-color": "#FFF",
       "linktree-link-bg-color-hover": "#FFF",
-      "linktree-link-transform": "translate(-8px, 8px)"
+      "linktree-link-transform": "translate(-8px, 8px)",
+      "nav-height": "4rem"
     },
     "grid": {
       "steps": 6
