@@ -16,6 +16,14 @@ jobs:
         with:
           node-version: 16
 
+      - name: Create blog post metadata
+        run: npm run posts
+
+      - name: Create RSS feed
+        run: npm run rss
+        env:
+          BEGIN_URL: ${{ secrets.SITE_URL }}
+
   # Assuming all that went fine (and it's main): deploy!
   deploy:
     # Setup
