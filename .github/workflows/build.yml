@@ -11,18 +11,45 @@ jobs:
 
     # Go
     steps:
-      - name: Build App
-        uses: architect/action-build@v3
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Install Architect
+        shell: bash
+        run: npm install @architect/architect
+
+      - name: Vendor dist files
+        shell: bash
+        run: npm run dist --if-present
+
+      - name: Hydrate
+        shell: bash
+        run: npx arc hydrate
+
       - name: Create blog post metadata
+        shell: bash
         run: npm run posts
 
       - name: Create RSS feed
+        shell: bash
         run: npm run rss
         env:
           BEGIN_URL: ${{ secrets.SITE_URL }}
+
+      - name: Test
+        shell: bash
+        run: npm test
 
   # Assuming all that went fine (and it's main): deploy!
   deploy:
@@ -33,9 +60,50 @@ jobs:
 
     # Go
     steps:
-      - name: Deploy app
-        uses: architect/action-deploy@v1
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
-          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           node-version: 16
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Install Architect
+        shell: bash
+        run: npm install @architect/architect
+
+      - name: Create blog post metadata
+        shell: bash
+        run: npm run posts
+
+      - name: Create RSS feed
+        shell: bash
+        run: npm run rss
+        env:
+          BEGIN_URL: ${{ secrets.SITE_URL }}
+
+      - name: Vendor dist files
+        shell: bash
+        run: npm run dist --if-present
+
+      - name: Staging Deploy
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        run: npx arc deploy --staging
+        env:
+          AWS_ACCESS_KEY_ID: ${{ inputs.aws_access_key_id }}
+          AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Production Deploy
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: bash
+        run: npx arc deploy --production
+        env:
+          AWS_ACCESS_KEY_ID: ${{ inputs.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
