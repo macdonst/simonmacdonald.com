@@ -97,6 +97,7 @@ jobs:
         shell: bash
         run: npx arc deploy --staging
         env:
+          ARC_AWS_CREDS: env
           AWS_ACCESS_KEY_ID: ${{ inputs.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
 
@@ -105,5 +106,6 @@ jobs:
         shell: bash
         run: npx arc deploy --production
         env:
+          ARC_AWS_CREDS: env
           AWS_ACCESS_KEY_ID: ${{ inputs.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
