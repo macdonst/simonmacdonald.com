@@ -145,3 +145,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ignore generated files
+app/api/posts.json
+app/api/rss.br
+app/api/rss.xml

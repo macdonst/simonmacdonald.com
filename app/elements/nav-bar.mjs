@@ -112,8 +112,8 @@ export default function NavBar({ html, state }) {
               uppercase tracking1 font-semibold text-1
             "
           >
-        <!-- ul class='mis-auto flex flex-col flex-row-lg gap0 list-none text-1 uppercase tracking1 font-semibold'-->
           <li><a href='/'>Home</a></li>
+          <li><a href='/blog'>Blog</a></li>
           <li><a href='/resume'>Resumé</a></li>
           <li><a href='/sandman'>Sandman</a></li>
           <li><a href='/linktree'>Links</a></li>

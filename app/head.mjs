@@ -1,5 +1,8 @@
 import titlesByPath from './lib/titlesByPath.mjs'
 import { getStyles }  from '@enhance/arc-plugin-styles'
+import { dirname, join } from 'node:path'
+import url from 'node:url'
+import { readFileSync } from 'node:fs'
 
 const { linkTag } = getStyles
 
@@ -19,6 +22,12 @@ export default function Head(state) {
       title: 'Human Goodreads',
       githubUsername: 'macdonst',
     }
+  }
+
+  if (store.hCard === undefined) {
+    let here = dirname(url.fileURLToPath(import.meta.url))
+    let hCardPath = join(here, 'api', 'h-card.json')
+    store.hCard = JSON.parse(readFileSync(hCardPath, 'utf-8'))
   }
 
   const title = titlesByPath[path] || ''
