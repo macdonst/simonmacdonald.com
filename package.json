@@ -13,7 +13,7 @@
     "@begin/validator": "^1.0.1",
     "@enhance/arc-image-plugin": "^1.1.0",
     "@enhance/arc-plugin-enhance": "^6.2.1",
-    "@enhance/arc-plugin-posse": "^0.3.0",
+    "@enhance/arc-plugin-posse": "^0.3.1",
     "@enhance/form-elements": "github:enhance-dev/form-elements#main",
     "@enhance/image": "^0.0.0-alpha.13",
     "arcdown": "^2.2.1",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@architect/architect": "^10.14.1",
-    "@architect/plugin-lambda-invoker": "^1.1.0",
+    "@architect/plugin-lambda-invoker": "^1.2.0",
     "@aws-sdk/client-apigatewaymanagementapi": "^3.252.0",
     "@aws-sdk/client-dynamodb": "^3.252.0",
     "@aws-sdk/client-s3": "^3.252.0",
