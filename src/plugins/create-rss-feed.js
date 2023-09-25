@@ -63,7 +63,7 @@ async function generate () {
   for (const post of items) {
     let { frontmatter, content, href } = post
     let { title = '', description = '', published = '', author = '', category = '' } = frontmatter
-    let link = `${hostname}/posts/${href}`
+    let link = `${hostname}/blog/posts/${href}`
     let image = frontmatter.image ? `${hostname}${frontmatter.image}` : null
     let authorArray = author ? [ { name: author }] : []
     let categoryArray = category ? category.split(',').map(str => { return { name: str.trim() } }) : []
