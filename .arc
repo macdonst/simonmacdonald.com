@@ -8,11 +8,17 @@ prune true
 architect/plugin-lambda-invoker
 enhance/arc-plugin-enhance
 enhance/arc-image-plugin
+enhance/arc-plugin-posse
 create-post-metadata
 create-rss-feed
 
 @enhance-styles
 config styleguide.json
+
+@posse
+feed "https://simonmacdonald.com/blog/rss"
+rate "1 hour"
+since "2023-09-24"
 
 @begin
 region us-west-2
