@@ -1,6 +1,7 @@
 ---
 title: State of the Browser 2023 Trip Report
 description: Over the weekend I made the pilgrimage from Ottawa to London to attend the 2023 version of State of the Browser.
+image: /_public/images/sotb.jpg
 published: "September 25, 2023"
 ---
 
