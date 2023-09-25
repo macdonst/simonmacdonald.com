@@ -81,6 +81,7 @@ async function generate () {
   }
 
   let feedXml = feed.rss2()
+  feedXml = feedXml.replaceAll(`"/_public`, `"${hostname}/_public`)
   let rssFeed = join(__dirname, '..', '..', 'app', 'api', 'rss.xml')
   await writeFile(rssFeed, feedXml)
   let rssBrotli = join(__dirname, '..', '..', 'app', 'api', 'rss.br')
