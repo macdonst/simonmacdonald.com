@@ -75,14 +75,14 @@ export default function Head(state) {
       <!-- Open Graph -->
       <meta name="og:title" content="Simon MacDonald" />
       <meta name="og:description" content="${description}" />
-      <meta name="og:image" content="${hostname}$${image}" />
+      <meta name="og:image" content="${hostname}${image}" />
       <meta name="og:url" content="${hostname}${req.path}" />
       <meta name="og:site_name" content="SimonMacDonald.com" />
       <meta name="og:type" content="website" />
 
       <meta property="og:title" content="Simon MacDonald" />
       <meta property="og:description" content="${description}" />
-      <meta property="og:image" content="${hostname}$${image}" />
+      <meta property="og:image" content="${hostname}${image}" />
       <meta property="og:url" content="${hostname}${req.path}" />
       <meta property="og:site_name" content="SimonMacDonald.com" />
       <meta property="og:type" content="website" />
