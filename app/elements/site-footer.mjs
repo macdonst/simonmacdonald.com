@@ -15,7 +15,7 @@ export default function SiteFooter({ html, state }) {
             &copy; ${new Date().getFullYear()} ${author.name}</span>
           </p>
           <p class='text-1'>
-            Built with <a href='https://enhance.dev'>Enhance</a>
+            <built-with size="xsmall"></built-with>
           </p>
         </text-container>
       </site-container>
