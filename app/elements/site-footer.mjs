@@ -15,7 +15,7 @@ export default function SiteFooter({ html, state }) {
             &copy; ${new Date().getFullYear()} ${author.name}</span>
           </p>
           <p class='text-1'>
-            <built-with size="xsmall"></built-with>
+            <built-with size="small"></built-with>
           </p>
         </text-container>
       </site-container>

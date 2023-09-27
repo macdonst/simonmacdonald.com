@@ -1,11 +1,12 @@
 export default function BuiltWith({ html, state }) {
   const { attrs } = state
-  const { size = 'small' } = attrs
+  const { size = 'medium' } = attrs
   const sizes = {
-    'xsmall': -1,
-    'small': 0,
-    'medium': 1,
-    'large': 2
+    'xsmall': -2,
+    'small': -1,
+    'medium': 0,
+    'large': 1,
+    'xlarge': 2
   }
 
   return html`
@@ -16,11 +17,12 @@ export default function BuiltWith({ html, state }) {
       color: white;
     }
     :host img {
-      height: 0.9em;
+      height: 0.95em;
+      inset-block-start: -1px;
     }
   </style>
   <a href="https://enhance.dev"
-     class="whitespace-no-wrap pb${-3 + sizes[size]} pi${0 + sizes[size]} text${0 + sizes[size]} font-semibold cursor-pointer radius0 no-underline inline-flex font-sans">
-    Built with&nbsp;<img src="/_public/favicon.svg"/>&nbsp;Enhance
+     class="whitespace-no-wrap pb${-3 + sizes[size]} pi${0 + sizes[size]} text${0 + sizes[size]} font-semibold cursor-pointer radius0 no-underline inline-flex align-items-center font-sans">
+    Built with&nbsp;<img class="relative" src="/_public/favicon.svg"/>&nbsp;Enhance
   </a>`
 }
