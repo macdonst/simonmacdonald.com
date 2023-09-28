@@ -1,7 +1,6 @@
 ---
 title: Upcoming Conferences
 description: Fall conference season is upon us and I'll speaking at a bunch over the next few months.
-image: /_public/images/sotb.jpg
 published: "September 27, 2023"
 ---
 
