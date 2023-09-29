@@ -6,7 +6,7 @@ prune true
 
 @plugins
 architect/plugin-lambda-invoker
-enhance/arc-plugin-enhance
+arc-plugin-enhance
 enhance/arc-image-plugin
 enhance/arc-plugin-posse
 create-post-metadata
