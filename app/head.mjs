@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path'
 import url from 'node:url'
 import { readFileSync } from 'node:fs'
 import getHostname from './lib/getHostname.mjs'
+import CodeStyles from './lib/codeStyles.mjs'
 
 const { linkTag } = getStyles
 
@@ -89,6 +90,7 @@ export default function Head(state) {
 
       <link href="https://mastodon.online/@macdonst" rel="me">
       ${linkTag()}
+      ${CodeStyles()}
       <style>
         :root {
           --ritm-top: -5em;
