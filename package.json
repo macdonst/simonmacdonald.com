@@ -21,6 +21,7 @@
     "google-auth-library": "^8.7.0",
     "gray-matter": "^4.0.3",
     "nodemailer": "^6.9.8",
+    "read-it-to-me": "^0.0.3",
     "reading-time": "^1.5.0",
     "xml2js": "^0.6.2"
   },

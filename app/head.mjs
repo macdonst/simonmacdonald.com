@@ -89,6 +89,11 @@ export default function Head(state) {
 
       <link href="https://mastodon.online/@macdonst" rel="me">
       ${linkTag()}
+      <style>
+        :root {
+          --ritm-top: -5em;
+        }
+      </style>
 
       ${(req.path === '/resume') ? '<link rel="stylesheet" href="/_public/print-resume.css">' : ''}
 
