@@ -34,3 +34,8 @@ send-email
 talks
   id *String
   date **String
+
+@http
+/og-img/:title
+  method get
+  src og-img

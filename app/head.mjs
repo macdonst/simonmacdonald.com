@@ -39,7 +39,9 @@ export default function Head(state) {
   let extraBlogMeta = []
   if (path.startsWith('/blog')) {
     description = store.post?.frontmatter?.description || description
-    image = store.post?.frontmatter?.image || image
+    let parts = req.path.split('/');
+    let lastSegment = parts.pop() || parts.pop();
+    image = `/og-img/${lastSegment}` || image
 
     extraBlogMeta.push(`<meta property="article:author" content="Simon MacDonald" />`)
 
