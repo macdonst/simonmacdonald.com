@@ -1,6 +1,6 @@
 ---
 title: The Case for Slack
-description: Most companies to agile wrong. My case for more slack in the system.
+description: Most companies do agile wrong. My case for more slack in the system.
 published: "April 4, 2024"
 ---
 
