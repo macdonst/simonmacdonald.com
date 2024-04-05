@@ -18,7 +18,7 @@ Using a metaphor borrowed from [Steven Covey](https://www.youtube.com/watch?v=pH
 
 ![full bucket](/_public/images/full-bucket.png)
 
-Great job, high fives all around. Our devs are fully allocated, we are going to get so much done this sprint. Unfortunately, you've just set yourself up for failure. I mean, I don't know you life but pobody's nerfect.
+Great job, high fives all around. Our devs are fully allocated, we are going to get so much done this sprint. Unfortunately, you've just set yourself up for failure. I mean, I don't know your life but pobody's nerfect.
 
 Things always go wrong during a sprint. Some common things that can derail your developers progress include:
 
@@ -44,6 +44,6 @@ Now you may be thinking, _"What if everything goes right? Will my lazy devs take
 
 ![full bucket](/_public/images/full-bucket.png)
 
-The real benefit to your system is these smaller tasks tend to be things like adding tests, refactoring or dealing with other [technical debt](https://en.wikipedia.org/wiki/Technical_debt). Normally these tasks don't get assigned during sprint planning since it is harder to justify why they are important to product owners. Leaving slack in your system allows devs to work on these technical debt issues which can only improve the resliency of your product.
+The real benefit to your system is these smaller tasks tend to be things like adding tests, refactoring or dealing with other [technical debt](https://en.wikipedia.org/wiki/Technical_debt). Normally these tasks don't get assigned during sprint planning since it is harder to justify why they are important to product owners. Leaving slack in your system allows devs to work on these technical debt issues which can only improve the resiliency of your product.
 
-Let me know what you think by reaching out to me on [Mastodon](https://mastodon.online/@macdonst).
+Let me know what you think by reaching out to me on [Mastodon](https://mastodon.online/@macdonst). Also, since I'm a human goodreads, if you want to go much deeper on this subject you should read  [Tom DeMarco's](https://en.wikipedia.org/wiki/Tom_DeMarco) amazing book on the subject called [Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency](https://www.penguinrandomhouse.ca/books/39276/slack-by-tom-demarco/9780767907699).
