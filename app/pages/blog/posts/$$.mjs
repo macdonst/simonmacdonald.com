@@ -1,4 +1,16 @@
 /** @type {import('@enhance/types').EnhanceElemFn} */
+
+function isNakedDay() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const start = new Date(year, 3, 24, -14, 0, 0).getTime() / 1000;
+  const end = new Date(year, 3, 24, 36, 0, 0).getTime() / 1000;
+  const z = now.getTimezoneOffset() * 60;
+  const currentTime = now.getTime() / 1000 - z;
+
+  return currentTime >= start && currentTime <= end;
+}
+
 export default function ({ html, state }) {
   const { store } = state
   const { post, mentions } = store
@@ -29,6 +41,6 @@ export default function ({ html, state }) {
           </resume-container>
         </site-container>
       <site-footer></site-footer>
-      <script type="module" src="/_public/browser/read-it-to-me.mjs"></script>
+      ${isNakedDay() ? '' : '<script type="module" src="/_public/browser/read-it-to-me.mjs"></script>' }
   `
 }
