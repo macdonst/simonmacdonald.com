@@ -121,6 +121,14 @@ export default function NavBar({ html, state }) {
       </nav>
       <div class='backdrop absolute inset-0 z-1'></div>
     </header>
+    <detect-missing-adblocker>
+      <span slot="title">🦠 Ad-blocker not detected</span>
+      <span slot="message">This site doesn't contain ads but consider installing a browser extension that blocks ads and other malicious scripts in your browser to protect your privacy and security.
+      <p><a href="https://stefanbohacek.com/project/detect-missing-adblocker-wordpress-plugin/#resources" target="_blank">Learn more.</a></p>
+      </span>
+    </detect-missing-adblocker>
+    <script src="/_public/browser/detect-missing-adblocker.mjs"></script>
+    <link rel="stylesheet" href="/_public/nativeads.js.css">
     </site-container>
   `
 }
