@@ -120,6 +120,10 @@ export default function Head(state) {
           src: url("/_public/fonts/HKGrotesk-SemiBold.woff2") format("woff2")
         }
 
+        @view-transition {
+          navigation: auto;
+        }
+
         body {
           color: var(--dark);
           background-color: var(--light);
