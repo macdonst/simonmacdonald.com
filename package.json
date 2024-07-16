@@ -9,7 +9,7 @@
     "test": "echo 0"
   },
   "dependencies": {
-    "@architect/functions": "^8.1.1",
+    "@architect/functions": "^8.1.6",
     "@begin/validator": "^1.0.3",
     "@enhance/arc-image-plugin": "^1.4.0",
     "@enhance/arc-plugin-enhance": "^11.0.1",
@@ -18,18 +18,18 @@
     "@enhance/form-elements": "^1.1.2",
     "@enhance/image": "^1.0.0",
     "arcdown": "^2.3.0",
-    "detect-missing-adblocker": "^0.0.2",
+    "detect-missing-adblocker": "^0.0.3",
     "feed": "^4.2.2",
     "google-auth-library": "^8.7.0",
     "gray-matter": "^4.0.3",
-    "nodemailer": "^6.9.8",
+    "nodemailer": "^6.9.14",
     "read-it-to-me": "^0.0.3",
     "reading-time": "^1.5.0",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@architect/architect": "^11.0.12",
-    "@architect/plugin-lambda-invoker": "^1.2.0",
+    "@architect/architect": "^11.0.13",
+    "@architect/plugin-lambda-invoker": "^2.0.0",
     "@enhance/cli": "^1.2.0",
     "@enhance/types": "^0.7.0",
     "eslint": "^8.56.0"
