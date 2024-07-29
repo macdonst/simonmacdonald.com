@@ -12,6 +12,7 @@ enhance/arc-image-plugin
 enhance/arc-plugin-posse
 create-post-metadata
 create-rss-feed
+enhance-plugin-block-bots
 
 @enhance-styles
 config styleguide.json
