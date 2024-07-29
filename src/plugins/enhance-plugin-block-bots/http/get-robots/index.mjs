@@ -3,11 +3,14 @@ import data from '@begin/data'
 import { readFileSync } from 'node:fs'
 
 async function get() {
-  let robots = await data.get({
+  // Do we have an updated robots.txt in the DB?
+  let result = await data.get({
     table: 'ai-robots-txt',
     key: 'agents'
   })
+  let robots = result?.robotsTxt || ''
 
+  // If not, serve the default robots.txt
   if (!robots) {
     robots = readFileSync('./default-robots.txt', 'utf-8')
   }
