@@ -17,6 +17,7 @@
     "@enhance/arc-plugin-styles": "^5.0.6",
     "@enhance/form-elements": "^1.1.2",
     "@enhance/image": "^1.0.0",
+    "@enhance/plugin-block-bots": "^0.0.3",
     "arcdown": "^2.3.0",
     "detect-missing-adblocker": "^0.0.3",
     "feed": "^4.2.2",
