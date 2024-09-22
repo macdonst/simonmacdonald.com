@@ -26,7 +26,9 @@ It is my second straight year attending [State of the Browser](https://2024.stat
 
 [Tickets](https://www.prairiedevcon.com/winnipeg.html#tickets-section)
 
-## Web Unleashed
+## ~~Web Unleashed~~
+
+**Update:** I've had to back out of Web Unleashed this year due to other work commitments but y'all should still buy a ticket!
 
 [Web Unleashed](https://fitc.ca/event/webu24/) is probably the closest I can get to a _local_ conference as it is only a quick train ride away for me. I've always enjoyed this conference as Shawn and his team do a great job of attracting top level talent. I mean who wouldn't want to attend a conference with Rachel Andrew, Chris Coyier, Henri Helvetica, etc.
 
