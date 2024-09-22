@@ -13,7 +13,7 @@
     "@begin/validator": "^1.0.3",
     "@enhance/arc-image-plugin": "^1.4.0",
     "@enhance/arc-plugin-block-bots": "^0.0.5",
-    "@enhance/arc-plugin-enhance": "^11.0.1",
+    "@enhance/arc-plugin-enhance": "^11.0.4",
     "@enhance/arc-plugin-posse": "^0.3.1",
     "@enhance/arc-plugin-styles": "^5.0.6",
     "@enhance/form-elements": "^1.1.2",
