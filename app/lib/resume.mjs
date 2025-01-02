@@ -1,9 +1,16 @@
 export default [
   {
+    company: 'Sanity',
+    role: 'Staff Software Engineer',
+    start: 2024,
+    end: null,
+    description: 'Working on a cool secret project. Check back in April for more details.'
+  },
+  {
     company: 'Begin',
     role: 'Head of Developer Experience',
     start: 2021,
-    end: null,
+    end: 2024,
     description: 'Head of Developer Experience at Begin where I contribute to open source projects like Architect and Enhance that enable developers to create functional web applications.'
   },
   {

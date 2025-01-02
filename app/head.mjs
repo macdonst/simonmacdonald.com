@@ -57,7 +57,7 @@ export default function Head(state) {
 
     store.post
       ? extraBlogMeta.push(`<link rel="canonical" href="${hostname}${req.path}" />`)
-      : extraBlogMeta.push('<link rel="alternate" href="/blog/rss" title="Begin — Blog" type="application/rss+xml" />')
+      : extraBlogMeta.push('<link rel="alternate" href="/blog/rss" title="simonmacdonald.com" type="application/rss+xml" />')
   }
 
   const title = titlesByPath[path] || ''
