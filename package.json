@@ -9,7 +9,7 @@
     "test": "echo 0"
   },
   "dependencies": {
-    "@architect/functions": "^8.1.6",
+    "@architect/functions": "^8.1.9",
     "@begin/validator": "^1.0.3",
     "@enhance/arc-image-plugin": "^1.4.0",
     "@enhance/arc-plugin-block-bots": "^0.0.5",
@@ -29,9 +29,9 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@architect/architect": "^11.0.13",
-    "@architect/plugin-lambda-invoker": "^2.0.0",
-    "@enhance/cli": "^1.2.0",
+    "@architect/architect": "^11.2.2",
+    "@architect/plugin-lambda-invoker": "^2.0.2",
+    "@enhance/cli": "^1.2.1",
     "@enhance/types": "^0.7.0",
     "eslint": "^8.56.0"
   },

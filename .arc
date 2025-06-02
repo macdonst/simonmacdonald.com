@@ -26,7 +26,7 @@ since "2023-09-24"
 region us-west-2
 
 @aws
-runtime nodejs18.x
+runtime nodejs22.x
 
 @events
 send-email
