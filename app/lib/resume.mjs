@@ -4,7 +4,7 @@ export default [
     role: 'Staff Software Engineer',
     start: 2024,
     end: null,
-    description: 'Working on a cool secret project. Check back in April for more details.'
+    description: 'Working on infrastructure as code and serverless compute.'
   },
   {
     company: 'Begin',
