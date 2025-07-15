@@ -22,7 +22,7 @@ I've been reading this [newsletter](https://labnotes.org/) since 2019 and never 
 
 I'm not a designer and I don't even play one on TV. People who know me would not praise me for my design sense. In fact I often lean into ugly websites so designers will take pity on me and help make things beautiful. Hat tip to [Cole Peters](https://colepeters.com/) for the design of this site.
 
-Anyway, this is another newsletter I've been reading for a very long time (2020). I'd say I always learn something while reading Kai's newsletter and I have gotten so many great book recommendations over the years.
+Anyway, [Dense Discovery](https://www.densediscovery.com/) is another newsletter I've been reading for a very long time (2020). I'd say I always learn something while reading Kai's newsletter and I have gotten so many great book recommendations over the years.
 
 ## What newsletters are you reading?
 
