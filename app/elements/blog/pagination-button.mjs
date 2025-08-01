@@ -21,7 +21,7 @@ export default function BlogPaginationButton({ html, state }) {
       ${!active
     ? `<a
              class="no-underline pi-1"
-             href="/?offset=${parseInt(index, 10) * limit}&limit=${limit}"
+             href="/?offset=${Number.parseInt(index, 10) * limit}&limit=${limit}"
            >
             ${label}
           </a>`

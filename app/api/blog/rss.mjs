@@ -1,15 +1,15 @@
+import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
-import { readFileSync } from 'node:fs'
 
 export async function get(req) {
-  let here = path.dirname(url.fileURLToPath(import.meta.url))
+  const here = path.dirname(url.fileURLToPath(import.meta.url))
 
-  let acceptEncoding = (req.headers && req.headers['accept-encoding'] ||
-                        req.headers && req.headers['Accept-Encoding'])
-  let returnCompressed = acceptEncoding && acceptEncoding.includes('br')
+  const acceptEncoding = (req.headers?.['accept-encoding'] ||
+                        req.headers?.['Accept-Encoding'])
+  const returnCompressed = acceptEncoding?.includes('br')
 
-  let resp = {
+  const resp = {
     statusCode: 200,
     headers: {
       'content-type': 'application/rss+xml; charset=UTF-8',
@@ -17,12 +17,12 @@ export async function get(req) {
   }
 
   if (returnCompressed) {
-    let postsFilePath = path.join(here, '..', 'rss.br')
+    const postsFilePath = path.join(here, '..', 'rss.br')
     resp.body = readFileSync(postsFilePath, 'utf-8')
     resp.isBase64Encoded = true
     resp.headers['content-encoding'] = 'br'
   } else {
-    let postsFilePath = path.join(here, '..', 'rss.xml')
+    const postsFilePath = path.join(here, '..', 'rss.xml')
     resp.body = readFileSync(postsFilePath, 'utf-8')
   }
 

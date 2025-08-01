@@ -1,31 +1,29 @@
-import { checkAuth } from '../../../lib/checkAuth.mjs'
 // View documentation at: https://enhance.dev/docs/learn/starter-project/api
-import { deleteLink } from '../../../models/links.mjs'
+import { deleteFeed } from '../../../models/feeds.mjs'
 
-export const post = [checkAuth, removeLink]
 
 /**
  * @type {import('@enhance/types').EnhanceApiFn}
  */
-export async function removeLink (req) {
+export async function post (req) {
   const id = req.pathParameters?.id
 
   const session = req.session
   // eslint-disable-next-line no-unused-vars
-  const { problems: removedProblems, link: removed, ...newSession } = session
+  const { problems: removedProblems, feed: removed, ...newSession } = session
   try {
-    const link = await deleteLink(id)
+    const feed = await deleteFeed(id)
     return {
       session: newSession,
-      json: { link },
-      location: '/links'
+      json: { feed },
+      location: '/feeds'
     }
   }
   catch (err) {
     return {
       session: { ...newSession, error: err.message },
       json: { error: err.message },
-      location: '/links'
+      location: '/feeds'
     }
   }
 }

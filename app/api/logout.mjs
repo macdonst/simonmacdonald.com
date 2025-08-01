@@ -5,10 +5,9 @@ export async function get () {
       session: {},
       location: '/'
     }
-  } else {
-    return {
-      code: 404
-    }
+  }
+  return {
+    code: 404
   }
 }
 

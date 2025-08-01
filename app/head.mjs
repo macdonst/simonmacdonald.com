@@ -1,10 +1,10 @@
-import titlesByPath from './lib/titlesByPath.mjs'
-import { getStyles }  from '@enhance/arc-plugin-styles'
+import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import url from 'node:url'
-import { readFileSync } from 'node:fs'
-import getHostname from './lib/getHostname.mjs'
+import { getStyles }  from '@enhance/arc-plugin-styles'
 import CodeStyles from './lib/codeStyles.mjs'
+import getHostname from './lib/getHostname.mjs'
+import titlesByPath from './lib/titlesByPath.mjs'
 
 const { linkTag } = getStyles
 
@@ -28,27 +28,27 @@ export default function Head(state) {
   }
 
   if (store.hCard === undefined) {
-    let here = dirname(url.fileURLToPath(import.meta.url))
-    let hCardPath = join(here, 'api', 'h-card.json')
+    const here = dirname(url.fileURLToPath(import.meta.url))
+    const hCardPath = join(here, 'api', 'h-card.json')
     store.hCard = JSON.parse(readFileSync(hCardPath, 'utf-8'))
   }
 
   let description = `Portfolio for ${store.author.name}, ${store.author.title}`
   let image = '/_public/heroes/bg.jpg'
 
-  let extraBlogMeta = []
+  const extraBlogMeta = []
   if (path.startsWith('/blog')) {
     description = store.post?.frontmatter?.description || description
-    let parts = req.path.split('/');
-    let lastSegment = parts.pop() || parts.pop();
+    const parts = req.path.split('/');
+    const lastSegment = parts.pop() || parts.pop();
     image = `/og-img/${lastSegment}` || image
 
     extraBlogMeta.push(`<meta property="article:author" content="Simon MacDonald" />`)
 
     if (store.post?.frontmatter?.published) {
-      let pubDate = new Date(store.post.frontmatter.published)
+      const pubDate = new Date(store.post.frontmatter.published)
       pubDate.setHours(13)
-      let dateString = pubDate.toISOString().replace('Z', '-0:00')
+      const dateString = pubDate.toISOString().replace('Z', '-0:00')
       extraBlogMeta.push(`<meta property="article:published_time" content="${dateString}" />`)
     }
     if (store.post?.frontmatter?.category) {
@@ -125,9 +125,19 @@ export default function Head(state) {
         }
 
         body {
+          --light: #fefefe;
+          --dark: #222222;
+          --fore: var(--dark, currentColor);
+          --back: var(--light);
+          color-scheme: only light;
           color: var(--dark);
           background-color: var(--light);
           text-rendering: optimizeLegibility;
+        }
+
+        enhance-page-container {
+          color: var(--dark) !important;
+          background-color: var(--light) !important;
         }
 
         a {

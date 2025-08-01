@@ -3,13 +3,13 @@ export default function BlogPagination({ html, state }) {
   const { limit = 20, offset = 0, total = 1 } = store
 
   if (limit >= total) {
-    return ``
+    return ''
   }
 
   const currentIndex = Math.floor(offset / limit)
   const totalPages = Math.ceil(total / limit)
 
-  const buttons = new Array(totalPages)
+  const buttons = Array.from({ length: totalPages })
     .fill('')
     .map((_, index) => index) // populate array values with indexes
     .filter(pageIndex => pageIndex >= currentIndex - 2 && pageIndex <= currentIndex + 2) // trim to 2 indexes before and after active index
