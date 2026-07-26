@@ -4,12 +4,12 @@ export default function LightBox({ html, state }) {
 
   return html`
       <style>
-        a img {
+        button img {
           aspect-ratio: var(--aspect-ratio, 3 / 2);
           transition: scale var(--transition-duration, 0.5s) var(--timing-function, ease-out);
         }
 
-        a img:hover {
+        button img:hover {
           scale: 1.125;
         }
 
@@ -36,11 +36,11 @@ export default function LightBox({ html, state }) {
         }
       </style>
 
-      <a href='${image}' data-instance='${instanceID}' class='block overflow-hidden'>
+      <button command="show-modal" commandfor="${instanceID}" class='block overflow-hidden'>
         <img src='${thumbnail}' alt='${alt}' class='object-cover object-c' />
-      </a>
+      </button>
       <h2 class="text-1 font-bold pbs-1">${alt}</h3>
-      <dialog data-instance='${instanceID}' class='m-auto overflow-visible'>
+      <dialog id='${instanceID}' class='m-auto overflow-visible'>
         <form method='dialog' class='text-end relative z1'>
           <button class='close-button radius-100 font-semibold'>&times;</button>
         </form>
